@@ -1,0 +1,1030 @@
+2015-11-04 07:50:19 [-][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\db\Connection::connectionString' in C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('connectionStrin...', 'mysql:host=loca...')
+#1 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\db\Connection), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\db\\Connecti...', Array, Array)
+#5 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\db\\Connecti...', Array, Array)
+#6 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(96): yii\di\ServiceLocator->get('db')
+#8 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(149): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#9 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\yii(31): yii\base\Application->run()
+#15 {main}
+2015-11-04 07:50:19 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S9A3QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S9A3QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S9A3QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S9A3QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1446619819.5413
+    'REQUEST_TIME' => 1446619819
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-11-04 07:50:37 [-][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\db\Connection::connectionString' in C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Component->__set('connectionStrin...', 'mysql:host=loca...')
+#1 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\db\Connection), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\db\\Connecti...', Array, Array)
+#5 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\db\\Connecti...', Array, Array)
+#6 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(96): yii\di\ServiceLocator->get('db')
+#8 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(149): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#9 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\ibad\20151104\libraryng\advanced\yii(31): yii\base\Application->run()
+#15 {main}
+2015-11-04 07:50:37 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S9A3QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S9A3QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S9A3QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S9A3QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1446619837.1162
+    'REQUEST_TIME' => 1446619837
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151104\\libraryng\\advanced\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-12-08 15:33:16 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#19 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#20 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#17 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#18 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-08 15:33:12 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CLASSPATH' => '.;c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S943QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S943QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\QuickTime\\QTSystem\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QTJAVA' => 'c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S943QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S943QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1449585191.4882
+    'REQUEST_TIME' => 1449585191
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2015-12-08 15:34:36 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#19 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#20 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#17 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#18 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-08 15:34:24 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CLASSPATH' => '.;c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S943QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S943QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\QuickTime\\QTSystem\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QTJAVA' => 'c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S943QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S943QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1449585262.5121
+    'REQUEST_TIME' => 1449585262
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2015-12-09 07:21:22 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#19 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#20 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#17 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#18 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-09 07:21:19 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CLASSPATH' => '.;c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S943QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S943QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\QuickTime\\QTSystem\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QTJAVA' => 'c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S943QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S943QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1449642079.6521
+    'REQUEST_TIME' => 1449642079
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2015-12-09 07:23:26 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#19 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#20 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(815): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\db\Schema.php(139): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(126): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(607): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate', Array)
+#17 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate', Array)
+#18 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-09 07:23:24 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CLASSPATH' => '.;c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S943QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S943QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\QuickTime\\QTSystem\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QTJAVA' => 'c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S943QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S943QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1449642204.0326
+    'REQUEST_TIME' => 1449642204
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2015-12-09 08:15:36 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php:163
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#3 {main}
+2015-12-09 08:15:36 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CLASSPATH' => '.;c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S943QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S943QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\QuickTime\\QTSystem\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QTJAVA' => 'c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S943QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S943QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1449645335.3395
+    'REQUEST_TIME' => 1449645335
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2015-12-09 08:16:12 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php:163
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#3 {main}
+2015-12-09 08:16:11 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CLASSPATH' => '.;c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S943QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S943QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\QuickTime\\QTSystem\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QTJAVA' => 'c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S943QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S943QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1449645371.8484
+    'REQUEST_TIME' => 1449645371
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2015-12-09 08:20:11 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php:163
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#3 {main}
+2015-12-09 08:20:10 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CLASSPATH' => '.;c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S943QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S943QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\QuickTime\\QTSystem\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QTJAVA' => 'c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S943QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S943QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1449645610.5413
+    'REQUEST_TIME' => 1449645610
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2015-12-09 08:23:33 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php:163
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#3 {main}
+2015-12-09 08:23:33 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CLASSPATH' => '.;c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-S943QQB'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-S943QQB'
+    'MOZ_PLUGIN_PATH' => 'C:\\PROGRAM FILES (X86)\\FOXIT SOFTWARE\\FOXIT READER\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C:\\Program Files (x86)\\AMD APP\\bin\\x86;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_60\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php;C:\\xampp\\htdocs\\yii\\framework;C:\\ProgramData\\ComposerSetup\\bin;c:\\Program Files (x86)\\QuickTime\\QTSystem\\'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QTJAVA' => 'c:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-S943QQB'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-S943QQB'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1449645812.9635
+    'REQUEST_TIME' => 1449645812
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2015-12-19 14:31:04 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php:163
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#3 {main}
+2015-12-19 14:31:03 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'BINGGORANDY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\BINGGORANDY'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_40\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'BinggoRandy'
+    'USERDOMAIN_ROAMINGPROFILE' => 'BinggoRandy'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1450531863.4316
+    'REQUEST_TIME' => 1450531863
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2015-12-19 14:31:38 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "rbac/init".' in C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php:163
+Stack trace:
+#0 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#1 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\ibad\20151208\libraryng\advanced\yii(31): yii\base\Application->run()
+#3 {main}
+2015-12-19 14:31:38 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Randy\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'BINGGORANDY'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Randy'
+    'LOCALAPPDATA' => 'C:\\Users\\Randy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\BINGGORANDY'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Java\\jdk1.8.0_40\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\xampp\\php'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Randy\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'BinggoRandy'
+    'USERDOMAIN_ROAMINGPROFILE' => 'BinggoRandy'
+    'USERNAME' => 'Randy'
+    'USERPROFILE' => 'C:\\Users\\Randy'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1450531898.0578
+    'REQUEST_TIME' => 1450531898
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\ibad\\20151208\\libraryng\\advanced\\yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
